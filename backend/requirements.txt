@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+httpx
+python-dotenv
+openai
+celery
+redis
+pydantic
+pydantic-settings
+python-multipart
+jinja2
