@@ -14,7 +14,7 @@ class RunStatus(str, enum.Enum):
 
 class AgentRun(Base):
     __tablename__ = "agent_runs"
-    __table_args__ = {"schema": "agentcontrolroom_data"}
+
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     agent_name = Column(String, nullable=False)
@@ -30,7 +30,7 @@ class AgentRun(Base):
 
 class ToolCall(Base):
     __tablename__ = "tool_calls"
-    __table_args__ = {"schema": "agentcontrolroom_data"}
+
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     run_id = Column(UUID(as_uuid=True), nullable=False)
@@ -45,7 +45,7 @@ class ToolCall(Base):
 
 class AgentEvent(Base):
     __tablename__ = "agent_events"
-    __table_args__ = {"schema": "agentcontrolroom_data"}
+
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     run_id = Column(UUID(as_uuid=True), nullable=False)
     event_type = Column(String, nullable=False)
