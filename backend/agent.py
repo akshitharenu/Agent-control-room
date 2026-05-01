@@ -7,7 +7,7 @@ from pathlib import Path
 env_path = Path(__file__).parent.parent / ".env"
 load_dotenv(dotenv_path=env_path)
 
-CONTROL_ROOM_URL = "http://127.0.0.1:8000"
+CONTROL_ROOM_URL = "https://agent-backend-ym1n.onrender.com"
 NVIDIA_API_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
 
 # --- Tools ---
